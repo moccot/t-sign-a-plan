@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T Sign a plan</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+        integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" />
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+        integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <main id="root">
+        <div id="steps">
+            <div class="step">
+                <h2>Choose a plan</h2>
+
+                <div id="plans" class="pure-g">
+                    <div class="pure-u-1-3 plan">
+                        <div class="plan-content">
+                            <h4 class="plan-heading">Premium</h4>
+
+                            <ul class="plan-benefits-list">
+                                <li>Unlimited <i>Lorem Ipsum's</i></li>
+                                <li>Unlimited <i>foo's</i></li>
+                                <li>Unlimited <i>bar's</i></li>
+                                <li>Unlimited <i>John Doe's</i></li>
+                                <li>Ability to use <strong>.</strong> (The Dot) in PHP</li>
+                                <li>Ability to use <strong>-></strong> (The Arrow) in JS</li>
+                            </ul>
+
+                            <div class="plan-price">
+                                $50/Mo
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pure-u-1-3 plan">
+                        <div class="plan-content">
+                            <h4 class="plan-heading">Medium</h4>
+                            <div class="recommended-plan-notice">Recommended</div>
+
+                            <ul class="plan-benefits-list">
+                                <li>Unlimited <i>Lorem Ipsum's</i></li>
+                                <li>Unlimited <i>foo's</i></li>
+                                <li>Unlimited <i>bar's</i></li>
+                            </ul>
+
+                            <div class="plan-price">
+                                $35/Mo
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pure-u-1-3 plan">
+                        <div class="plan-content">
+                            <h4 class="plan-heading">Basic</h4>
+
+                            <ul class="plan-benefits-list">
+                                <li>2 <i>Lorem Ipsum's</i> per project</li>
+                                <li>230 <i>foo's</i></li>
+                                <li>500 <i>bar's</i></li>
+                            </ul>
+
+                            <div class="plan-price">
+                                $15/Mo
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step">
+                <h2>User Info</h2>
+
+                <form id="user-info">
+                    <input type="text" name="username" placeholder="Username">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="password" name="password" placeholder="Password">
+
+                    <div class="form-footer">
+                        <div class="actions-wrapper">
+                            <button type="button" class="previous-step">Back</button>
+                            <button type="button" class="next-step">Next step</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="step">
+                <h2>Credit Card Info</h2>
+
+                <form id="credit-card-info">
+                    <input type="text" name="number" placeholder="Number">
+                    <input type="text" name="expirationDate" placeholder="Expiration Date">
+                    <input type="text" name="verificationCode" placeholder="Verification Code">
+
+                    <div class="form-footer">
+                        <div class="actions-wrapper">
+                            <button type="button" class="previous-step">Back</button>
+                            <button type="button" class="next-step">Next step</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="step">
+                <h2>Mailing Info</h2>
+
+                <form id="credit-card-info">
+                    <input type="text" name="fullName" placeholder="Full Name">
+                    <input type="text" name="phoneNumber" placeholder="Phone Number">
+                    <input type="text" name="address" placeholder="Address">
+
+                    <div class="form-footer">
+                        <div class="actions-wrapper">
+                            <button type="button" class="previous-step">Back</button>
+                            <button type="button" id="finish-registration">Finish registration</button>
+                        </div>
+
+                        <span id="terms-and-conditions-acceptance-notice">By clicking "Finish registration", you're
+                            accepting a lot of stuff. Do you wanna know? <a href="#">A lot of
+                                stuff</a>.</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
